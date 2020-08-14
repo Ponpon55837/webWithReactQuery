@@ -5,7 +5,7 @@ import Person from '../pageComponents/Person'
 import PageCount from '../components/PageCount'
 
 const fetchPeople = async (key, page) => {
-  const res = await fetch(`http://swapi.dev/api/people/?page=${page}&people=1`)
+  const res = await fetch(`https://swapi.dev/api/people/?page=${page}&people=1`)
   return res.json()
 }
 
