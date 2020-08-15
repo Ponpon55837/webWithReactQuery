@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Planets from './components/Planets'
 import People from './components/People'
-import { ReactQueryDevtools } from 'react-query-devtools'
+// import { ReactQueryDevtools } from 'react-query-devtools'
 import { Container } from 'react-bootstrap'
 
 const App = () => {
