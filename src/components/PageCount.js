@@ -2,8 +2,7 @@ import React from 'react'
 import { Pagination } from 'react-bootstrap'
 // import { paginationStyle } from '../style'
 
-const PageCount = ({ page, setPage }) => {
-  const arrs = [1, 2, 3, 4, 5, 6]
+const PageCount = ({ page, setPage, arrs }) => {
 
   return (
     <Pagination>

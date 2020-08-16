@@ -12,12 +12,11 @@ const fetchPlanets = async (key, page) => {
 const Planets = () => {
   const [page, setPage] = useState(1)
   const { data, status } = useQuery(['planets', page], fetchPlanets)
-  console.log(data)
+  const arrs = [1, 2, 3, 4, 5, 6]
 
   return (
     <div>
       <h2>Planets</h2>
-      <PageCount page={page} setPage={setPage} />
       { // 如果還在loading，顯示loading的畫面
         status === 'loading' && (
         <Spinner size='lg' animation="border" />
@@ -31,12 +30,13 @@ const Planets = () => {
       { //如果成功，顯示內容
         status === 'success' && (
         <div>
+          <PageCount page={page} setPage={setPage} arrs={arrs} />
           {data.results.map(planet => (
             <Planet key={planet.name} planet={planet} />
           ))}
+          <PageCount page={page} setPage={setPage} arrs={arrs} />
         </div>
       )}
-      <PageCount page={page} setPage={setPage} />
     </div>
   )
 }
