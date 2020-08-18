@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 120px;
+  cursor: pointer;
+}
+
+img {
+  width: 120px;
+}

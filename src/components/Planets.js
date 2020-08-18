@@ -37,6 +37,7 @@ const Planets = () => {
           <PageCount page={page} setPage={setPage} arrs={arrs} />
         </div>
       )}
+
     </div>
   )
 }
