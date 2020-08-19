@@ -11,9 +11,9 @@ const App = () => {
 
   return (
     <>
+      <Navbar setPage={setPage} />
       <div>
         <h1>Star Wars Info</h1>
-        <Navbar setPage={setPage} />
           <Container className='content'>
             { page === 'planets' ? <Planets /> : <People /> }
           </Container>

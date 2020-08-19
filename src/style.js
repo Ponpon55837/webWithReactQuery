@@ -15,3 +15,13 @@ export const paginationStyle = {
   backgroundColor: '#1b1b1b',
   borderRadius: '20px'
 }
+
+export const navStyle = {
+  backgroundColor: '#1b1b1b',
+  opacity: '0.7'
+}
+
+export const footerStyle = {
+  backgroundColor: '#1b1b1b',
+  opacity: '0.7'
+}
